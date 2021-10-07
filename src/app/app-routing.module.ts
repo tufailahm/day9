@@ -7,6 +7,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { WelcomeComponent } from './welcome/welcome.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { WeatherComponent } from './weather/weather.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'empDetails', component: EmployeeDetailComponent },
   { path: 'addProduct', component: AddProductComponent },
   { path: 'addProduct/:productId', component: AddProductComponent },
+  { path: 'season', component: WeatherComponent },
+
 ]
 
 @NgModule({

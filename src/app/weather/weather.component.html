@@ -1,0 +1,9 @@
+<h1>Weather Component - Parent</h1>
+Temperature of {{cityName}} is  : <input type="text" #ptext (keyup)="0">
+<br/>
+Chance of the rain in {{ cityName }} is : <input type="text" #raintext (keyup)="0">
+<hr/>
+<app-city 
+[currentTemp]="ptext.value" 
+[percentageRainChance]="raintext.value" 
+(childEvent)="cityName=$event"></app-city>

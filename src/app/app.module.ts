@@ -11,11 +11,14 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AddProductComponent } from './add-product/add-product.component';
-import { ReverseStringPipe } from './reverse-string.pipe'
+import { ReverseStringPipe } from './reverse-string.pipe';
+import { WeatherComponent } from './weather/weather.component';
+import { CityComponent } from './city/city.component';
+import { AddBorderDirective } from './add-border.directive'
 
 @NgModule({
   declarations: [
-    AppComponent,WelcomeComponent, EmployeeComponent, EmployeeDetailComponent, ProductListComponent, ProductDetailsComponent, AddProductComponent, ReverseStringPipe
+    AppComponent,WelcomeComponent, EmployeeComponent, EmployeeDetailComponent, ProductListComponent, ProductDetailsComponent, AddProductComponent, ReverseStringPipe, WeatherComponent, CityComponent, AddBorderDirective
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, AppRoutingModule, ReactiveFormsModule
